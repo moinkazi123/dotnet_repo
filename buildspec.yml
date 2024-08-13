@@ -6,7 +6,6 @@ phases:
       dotnet: 8.0
     commands:
       - echo "Installing dependencies..."
-      - dotnet restore || (echo "dotnet restore failed" && exit 1)
 
   build:
     commands:
