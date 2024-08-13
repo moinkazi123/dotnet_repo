@@ -1,0 +1,10 @@
+version: 0.0
+os: windows
+files:
+  - source: /
+    destination: C:\inetpub\wwwroot\MySampleApp
+hooks:
+  AfterInstall:
+    - location: scripts/install.ps1
+      timeout: 300
+      runas: SYSTEM
